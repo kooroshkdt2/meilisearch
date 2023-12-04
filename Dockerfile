@@ -10,7 +10,7 @@ RUN wget https://github.com/meilisearch/meilisearch/releases/download/v1.5.0/mei
     chmod 777   -R /meili_data  /usr/local/bin/meilisearch &&\
     chmod +x /usr/local/bin/meilisearch  &&\
     echo '#!/bin/bash' > /usr/local/bin/start.sh &&\
-    echo 'we are trying to start service' >> /usr/local/bin/start.sh &&\
+    echo 'echo "we are trying to start service"' >> /usr/local/bin/start.sh &&\
     echo '/usr/local/bin/meilisearch' >> /usr/local/bin/start.sh &&\
     chmod 777 /usr/local/bin/meilisearch /usr/local/bin/start.sh &&\
     chmod +x /usr/local/bin/start.sh /usr/local/bin/meilisearch
